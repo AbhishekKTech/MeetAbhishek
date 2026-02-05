@@ -59,7 +59,7 @@ export const socialLinks = [
 ]
 
 export const personalInfo = {
-  "name": "Abhishek Singh",
+  "name": "Abhishek Sharma ji",
   "title": "Software Engineer",
   "email": "your.email@example.com",
   "location": "Los Angeles, CA",
