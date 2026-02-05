@@ -38,34 +38,34 @@ export const navigationLinks = [
 export const socialLinks = [
   {
     "platform": "github",
-    "url": "https://github.com/abhishekbuilds",
+    "url": "https://github.com/abhishekktech",
     icon: Github
   },
   {
     "platform": "linkedin",
-    "url": "https://linkedin.com/in/abhishekbuilds",
+    "url": "https://linkedin.com/in/abhishekktech",
     icon: Linkedin
   },
   {
-    "platform": "twitter",
-    "url": "https://twitter.com/AbhiTweetsEtc",
-    icon: Twitter
+    "platform": "email",
+    "url": "mailto:sharma.abhieee@gmail.com",
+    icon: Mail
   },
   {
-    "platform": "email",
-    "url": "mailto:iabhishekapp@gmail.com",
-    icon: Mail
+    "platform": "custom",
+    "url": "https://leetcode.com/u/abhieee-dev/",
+    "icon": "Globe"
   }
 ]
 
 export const personalInfo = {
-  "name": "Abhishek Sharma ji",
-  "title": "Software Engineer",
+  "name": "Abhishek Sharma",
+  "title": "Software Developer - Student at JSSATE Noida (MCA)",
   "email": "your.email@example.com",
-  "location": "Los Angeles, CA",
-  "bio": "A curious mind navigating the world with 4 years of software engineering experience, turning challenges into opportunities. Currently pursuing my Master’s in Computer Science at CSU Fullerton. When I’m not behind the keyboard, you’ll find me exploring new places, capturing nature’s beauty, or binging on travel vlogs. I’m looking for my next challenge and a chance to leave a positive mark.",
-  "resumeUrl": "https://www.dropbox.com/scl/fi/960w9k85626j57x55myb3/Abhishek-Singh-SoftwareEngineer.pdf?rlkey=htbuuxnfw5fd4lg2h34t1gaev&st=ledi8206&dl=1",
-  "imageUrl": "https://www.dropbox.com/scl/fi/les7f5rrxipcl8w81rv71/portfolio_about_me.jpeg?rlkey=73ppvkyf72rs28xd991z8e595&e=1&st=ktaqkjug&dl=1",
+  "location": "Noida, IN",
+  "bio": "I am a curious and responsible individual who strives for excellence in every aspect. capable of adapting to any work environment. Currently pursuing an MCA from JSSATE Noida, I am dedicated to upskilling and refining my personality to meet top-tier industry standards. When not behind the keyboard, you will find me exploring new ideas and focusing on self-growth.",
+  "resumeUrl": "https://www.dropbox.com/scl/fi/hyku9uyitae78i62ln7ek/Abhishek-Resume-v1-2.pdf?rlkey=9ymq1hnffindqcz7vi0irr5ho&st=h9tpcwbd&dl=0",
+  "imageUrl": "https://previews.dropbox.com/p/thumb/AC7-ngR35W8C6AYC99d-YvA9Jfrgp9Bi-bWSVsDzCJcxTbFuUP3xIhHY5cNOyHX923-4mTMYk2BGarGAaKe_5eSLbnuCi7oYefbaaP9h2KZlV3mURBHlL5AyNYFiuet2hfUvrdgxoexsi_IDLPkdl-KSLAfzjc0B5VOOfblu0u-fkIKZhI3Ngu1MpD_DZ41C1ubQSNayIew-cUvokEP0dF6XypZZDXybZsIy-4nlI4eEep_ayNcTttZDWQNt9Qa3xrtWPHji9S2xntdPWS_toBgqCX6wZZf4-gyWQ9zN7mmY-7esLV9qwpZX0z5DFbVdP43EAUsZ8smmVCpknCeRCQu43K7vuZgvi6Q27hqJspQDMozpDoqaw3k1y6Wrd6ZXT4zYbLTj_40GHqIstjN4wFdp/p.png?is_prewarmed=true",
   "logoFormat": "initials",
   "openToWork": true,
   "web3formsKey": ""
@@ -73,24 +73,20 @@ export const personalInfo = {
 
 export const projects = [
   {
-    "title": "Suzess",
-    "description": "Something cool is going to be updated here. For now, you can subscribe to the updates on the website; no need to sign an NDA.",
+    "title": "CyberZet Digital Solutions",
+    "description": "A digital solutions Site to meet your business goals. Providing services in website development, digital marketing, graphic design, and online courses to boost your digital presence.",
     "tags": [
-      "Java",
-      "SpringBoot",
-      "SpringSecurity",
       "React",
-      "AWS",
-      "Python"
+      "JavaScript"
     ],
     "links": [
       {
-        "name": "Website",
-        "url": "https://suzess.app/",
+        "name": "CyberZet.in",
+        "url": "https://thecyberzet.in/",
         icon: Globe
       }
     ],
-    "inDevelopment": true
+    "inDevelopment": false
   },
   {
     "title": "Realtime Stock Market Analytics",
@@ -108,23 +104,6 @@ export const projects = [
         icon: Github
       }
     ]
-  },
-  {
-    "title": "Linkedin Email Extractor",
-    "description": "LinkedIn Email Extractor (LEE) is a Python script that uses Google’s Custom Search Engine API to find LinkedIn profiles and automatically extract email addresses from profile descriptions. Open-sourced under the MIT license, LEE has earned 60 GitHub stars and 47 forks to date.",
-    "tags": [
-      "Node.js",
-      "PostgreSQL",
-      "Redis",
-      "Docker"
-    ],
-    "links": [
-      {
-        "name": "Github",
-        "url": "https://github.com/abhishekbuilds/linkedin-email-extractor",
-        icon: Github
-      }
-    ]
   }
 ]
 
@@ -135,10 +114,6 @@ export const skills = [
       {
         "name": "Java",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-      },
-      {
-        "name": "Python",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
       },
       {
         "name": "Javascript",
@@ -153,12 +128,8 @@ export const skills = [
         "icon": "https://www.dropbox.com/scl/fi/jqdx5b3pginw8gumalhwf/CSS3.png?rlkey=ts5q8m2h9n7rcs8pa0545mzxw&st=jeq4tm7s&dl=1"
       },
       {
-        "name": "YAML",
-        "icon": "https://www.dropbox.com/scl/fi/ctq2qh182xtgniyetm9l2/YAML.png?rlkey=y5ur6yh8vechovjj82f6hx3iv&st=w29msxuq&dl=1"
-      },
-      {
-        "name": "Bash",
-        "icon": "https://www.dropbox.com/scl/fi/n2e3wa7ydvxdffm9v8qmx/Bash.png?rlkey=bthqmpf8q7mv9d5jj2jexg0z8&st=fp8a5oho&dl=1"
+        "name": "C++",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
       }
     ]
   },
@@ -166,24 +137,8 @@ export const skills = [
     "category": "Databases & Messaging",
     "items": [
       {
-        "name": "PostgreSQL",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
-      },
-      {
         "name": "MongoDB",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
-      },
-      {
-        "name": "Redis",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
-      },
-      {
-        "name": "Apache Kafka",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg"
-      },
-      {
-        "name": "MongoDB",
-        "icon": "https://cdn.simpleicons.org/mongodb/47A248"
       }
     ]
   },
@@ -191,32 +146,8 @@ export const skills = [
     "category": "Infrastructure & Tools",
     "items": [
       {
-        "name": "Docker",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
-      },
-      {
         "name": "Git",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-      },
-      {
-        "name": "Jenkins",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
-      },
-      {
-        "name": "TeamCity",
-        "icon": "https://www.dropbox.com/scl/fi/qwg9j7blhqm0oepu9uiqp/TeamCity_Icon.png?rlkey=oudtbpvz5rd5pyxmrqnkpzzlo&st=ynbn0t2o&dl=1"
-      },
-      {
-        "name": "Jira",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"
-      },
-      {
-        "name": "Maven",
-        "icon": "https://www.dropbox.com/scl/fi/mmnfqbf78689vs73lbm5l/maven.144x256.png?rlkey=xi3b8ptlq37lsh8q8e105ugfu&st=x6fn2rs7&dl=1"
-      },
-      {
-        "name": "Azure",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
       },
       {
         "name": "AWS",
@@ -228,36 +159,8 @@ export const skills = [
     "category": "Frameworks",
     "items": [
       {
-        "name": "Spring",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
-      },
-      {
-        "name": "JUnit",
-        "icon": "https://www.dropbox.com/scl/fi/vcbtk0voy15t60y80swzy/JUnit.png?rlkey=3vckv6b1hhahkhh8z4lma0h1r&st=v2u7nbv8&dl=1"
-      },
-      {
-        "name": "Spark",
-        "icon": "https://www.dropbox.com/scl/fi/a1ep3f8txrrrz7gqgwe7t/Apache-Spark.png?rlkey=s33gensoe4ree27k2f1excii2&st=xfk93prs&dl=1"
-      },
-      {
-        "name": "Hadoop",
-        "icon": "https://www.dropbox.com/scl/fi/4hqav2uhmb9ufykx5tn15/Apache-Hadoop.png?rlkey=vh9hpoldt6qgkmxtizf9oloyj&st=hpu11ty7&dl=1"
-      },
-      {
-        "name": "Selenium",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/selenium/selenium-original.svg"
-      },
-      {
-        "name": "Appium",
-        "icon": "https://cdn.simpleicons.org/appium/4285F4"
-      },
-      {
-        "name": "Karate",
-        "icon": "https://www.dropbox.com/scl/fi/xdvbkkt913npr6ftu048n/Karate-Labs.png?rlkey=qt8xvglsxwaiulvui7yjp3nyx&st=ytmk6p0x&dl=1"
-      },
-      {
-        "name": "Cucumber",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cucumber/cucumber-plain.svg"
+        "name": "Bootstrap",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
       }
     ]
   },
@@ -269,10 +172,6 @@ export const skills = [
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
       },
       {
-        "name": "Nextjs",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
-      },
-      {
         "name": "Express",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
       }
@@ -282,60 +181,35 @@ export const skills = [
 
 export const experience = [
   {
-    "title": "Information Technology Analyst",
-    "company": "NTT Data",
-    "location": "Bengaluru, India",
-    "startYear": "2019",
-    "endYear": "2022",
+    "title": "Website Developer Intern",
+    "company": "Live Tech Service",
+    "location": "Greater Noida, India",
+    "startYear": "2023",
+    "endYear": "2024",
     "isOngoing": false,
     "description": [
-      "Enhanced error handling across multiple legacy microservices by applying standard HTTP status codes and streamlining the troubleshooting process.",
-      "Developed reusable UI components and implemented client-side validation in React to strengthen form submission reliability.",
-      "Delivered robust solutions with high unit test coverage and improved maintainability through reusable modules."
-    ]
-  },
-  {
-    "title": "Software Developer Intern",
-    "company": "Delvetech Software",
-    "location": "New Delhi, Delhi",
-    "startYear": "2018",
-    "endYear": "2018",
-    "isOngoing": false,
-    "description": [
-      "Analyzed and addressed 20+ defects in a Python enterprise project, improving project stability",
-      "Created and updated over 10 technical documents, reducing onboarding time for new team members"
-    ]
-  },
-  {
-    "title": "Software Engineer II",
-    "company": "Jio Platforms Limited",
-    "location": "Bengaluru, India",
-    "startYear": "2022",
-    "endYear": "2023",
-    "isOngoing": false,
-    "description": [
-      "Built scalable RESTful APIs using Java, Spring Boot, and Hexagonal Architecture, handling 50k+ daily requests for a super app.",
-      "Improved code quality (750K LOCs) by 25% and cut post-release defects by 15% through SonarQube-based continuous analysis."
+      "Built responsive WordPress & Shopify websites and handled ongoing maintenance for continuous availability.",
+      "Executed hands-on SEO strategies to boost website visibility and drive key organizational growth."
     ]
   }
 ]
 
 export const education = [
   {
-    "degree": "Master of Science in Computer Science",
-    "institution": "California State University",
-    "location": "Fullerton, CA",
-    "startYear": "2023",
+    "degree": "Master of Computer Applications",
+    "institution": "JSS Academy of Technical Education",
+    "location": "Noida, IN",
+    "startYear": "2025",
     "endYear": "",
     "isOngoing": true,
     "description": "Specialized in distributed systems and database management. Research focus on scalable architecture patterns."
   },
   {
-    "degree": "Bachelor of Technology in Computer Science",
-    "institution": "Dr. APJ Abdul Kalam Technical University",
-    "location": "Lucknow, India",
-    "startYear": "2015",
-    "endYear": "2019",
+    "degree": "Bachelor of Computer Applications",
+    "institution": "Chaudhary Charan Singh University",
+    "location": "Meerut, India",
+    "startYear": "2021",
+    "endYear": "2024",
     "isOngoing": false,
     "description": "Core curriculum in algorithms, data structures, and systems programming."
   }
