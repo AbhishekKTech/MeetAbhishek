@@ -285,6 +285,8 @@ export function CertificationForm({
                 alt="Badge preview"
                 fill
                 className="object-contain"
+                // UPDATE: Added unoptimized to prevent flickering/loading issues with external images
+                unoptimized
                 onError={(e) => {
                   const img = e.target as HTMLImageElement
                   img.src = "/placeholder.svg"

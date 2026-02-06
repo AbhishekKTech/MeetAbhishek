@@ -1,8 +1,11 @@
+"use client" // Zaroori hai kyunki hum ab state use kar rahe hain
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ExternalLink } from "lucide-react"
 import { CertificationStatusBadge, type CertificationStatus } from "./certification-status-badge"
 import Image from "next/image"
+import { useState, useEffect } from "react"
 
 interface CertificationCardProps {
   title: string
@@ -25,7 +28,15 @@ export function CertificationCard({
   badgeUrl,
   description,
 }: CertificationCardProps) {
-  // Calculate certification status
+  
+  // State to handle image source securely without flickering
+  const [imgSrc, setImgSrc] = useState(badgeUrl || "/placeholder.svg")
+
+  // Agar badgeUrl change ho, toh state update karo
+  useEffect(() => {
+    setImgSrc(badgeUrl || "/placeholder.svg")
+  }, [badgeUrl])
+
   const calculateStatus = (): CertificationStatus => {
     if (!expiryDate) return "no-expiry"
     const currentYear = new Date().getFullYear()
@@ -57,13 +68,15 @@ export function CertificationCard({
               <a href={badgeUrl} target="_blank" rel="noopener noreferrer" className="block">
                 <div className="relative w-20 h-20 rounded-lg overflow-hidden bg-background hover:opacity-90 transition-opacity">
                   <Image
-                    src={badgeUrl || "/placeholder.svg"}
+                    src={imgSrc}
                     alt={`${title} certification badge`}
                     fill
                     className="object-contain"
-                    onError={(e) => {
-                      const img = e.target as HTMLImageElement
-                      img.src = "/placeholder.svg"
+                    // KEY CHANGE: unoptimized lagaya taaki external images seedhi load hon
+                    unoptimized 
+                    onError={() => {
+                      // React state update is smoother than direct DOM manipulation
+                      setImgSrc("/placeholder.svg")
                     }}
                   />
                 </div>
