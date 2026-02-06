@@ -654,6 +654,9 @@ export default function Portfolio() {
             © {new Date().getFullYear()} {unsavedData.personalInfo.name}. All rights reserved.
           </p>
 
+          <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground"><a href="mailto:sharma.abhieee@gmail.com" class="hover:text-foreground transition-colors">📧 Contact</a><a href="https://github.com/abhishekktech" target="_blank" rel="noopener noreferrer" class="hover:text-foreground transition-colors">🛠 GitHub</a><a class="hover:text-foreground transition-colors" href="/projecttwoclicks/feedback">📝 Feedback</a></div>
+
+
           {/* <p>
             Portfolio developed under{" "}
             <a
