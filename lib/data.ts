@@ -202,7 +202,7 @@ export const education = [
     "startYear": "2025",
     "endYear": "",
     "isOngoing": true,
-    "description": "Specialized in distributed systems and database management. Research focus on scalable architecture patterns."
+    "description": ""
   },
   {
     "degree": "Bachelor of Computer Applications",
@@ -211,7 +211,7 @@ export const education = [
     "startYear": "2021",
     "endYear": "2024",
     "isOngoing": false,
-    "description": "Core curriculum in algorithms, data structures, and systems programming."
+    "description": ""
   },
     {
     "degree": "Intermediate",
