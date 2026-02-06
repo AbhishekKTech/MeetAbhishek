@@ -663,13 +663,13 @@ export default function Portfolio() {
               🛠 GitHub
             </a>
             {/* Note: Yeh link tabhi chalega agar tumne feedback page banaya ho */}
-            <a className="hover:text-foreground transition-colors" href="/feedback">
-              📝 Feedback
+            <a className="hover:text-foreground transition-colors"  target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/abhishekktech">
+              💼 Linkdin
             </a>
           </div>
         </div>
       </footer>
-      
+
       <Toaster />
     </div>
   )
