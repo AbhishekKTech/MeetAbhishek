@@ -64,7 +64,7 @@ export const personalInfo = {
   "email": "sharma.abhieee@gmail.com",
   "location": "Noida, IN",
   "bio": "I am a curious and responsible individual who strives for excellence in every aspect. capable of adapting to any work environment. Currently pursuing an MCA from JSSATE Noida, I am dedicated to upskilling and refining my personality to meet top-tier industry standards. When not behind the keyboard, you will find me exploring new ideas and focusing on self-growth.",
-  "resumeUrl": "https://www.dropbox.com/scl/fi/hyku9uyitae78i62ln7ek/Abhishek-Resume-v1-2.pdf?rlkey=9ymq1hnffindqcz7vi0irr5ho&st=h9tpcwbd&dl=0",
+  "resumeUrl": "https://www.dropbox.com/scl/fi/hyku9uyitae78i62ln7ek/Abhishek-Resume-v1-2.pdf?rlkey=9ymq1hnffindqcz7vi0irr5ho&st=h9tpcwbd&raw=1",
   "imageUrl": "https://firebasestorage.googleapis.com/v0/b/dropbox-clone-7b8ff.appspot.com/o/users%2Fuser_39Hf0HYSX3M659UUWL4vID7Yvcx%2Ffiles%2FtQfui5QG3iqCGrThI6Yh?alt=media&token=d51ee2c6-50a3-468f-8bd0-23821c05f620",
   "logoFormat": "initials",
   "openToWork": true,
@@ -212,6 +212,15 @@ export const education = [
     "endYear": "2024",
     "isOngoing": false,
     "description": "Core curriculum in algorithms, data structures, and systems programming."
+  },
+    {
+    "degree": "Intermediate",
+    "institution": "B.S. Inter College",
+    "location": "Noida, India",
+    "startYear": "2019",
+    "endYear": "2021",
+    "isOngoing": false,
+    "description": ""
   }
 ]
 
