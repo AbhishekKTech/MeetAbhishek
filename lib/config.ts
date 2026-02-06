@@ -33,8 +33,8 @@ export const API_URLS = {
 // Links configuration
 export const LINKS = {
   CUSTOM_DOMAIN_DOCS: "https://devcenter.heroku.com/articles/custom-domains",
-  DISCORD_INVITE: "https://discord.gg/rMQ7qxHQ",
-  GITHUB_REPO: "https://github.com/abhishekbuilds/project-two-clicks",
+  DISCORD_INVITE: "#",
+  GITHUB_REPO: "https://github.dev/AbhishekKTech/MeetAbhishek",
 }
 
 // Static content configuration
@@ -54,7 +54,7 @@ export const CONTENT = {
     CUSTOM_DOMAIN_LINK_TEXT: "view how to setup custom domain",
     DISCORD_MESSAGE: "or join our",
     DISCORD_LINK_TEXT: "Discord channel",
-    GITHUB_MESSAGE: "If you love Project Two Clicks, please give us a star on",
+    GITHUB_MESSAGE: "If you love Project, please give us a star on",
     GITHUB_LINK_TEXT: "GitHub",
     REDEPLOY_MESSAGE: "An older version of your portfolio already exists. Would you like to redeploy this version?",
     ERRORS: {

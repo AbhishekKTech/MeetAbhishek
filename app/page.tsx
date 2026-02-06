@@ -653,7 +653,8 @@ export default function Portfolio() {
           <p>
             © {new Date().getFullYear()} {unsavedData.personalInfo.name}. All rights reserved.
           </p>
-          <p>
+
+          {/* <p>
             Portfolio developed under{" "}
             <a
               href={LINKS.GITHUB_REPO}
@@ -661,9 +662,10 @@ export default function Portfolio() {
               rel="noopener noreferrer"
               className="hover:text-foreground underline transition-colors"
             >
-              #ProjectTwoClicks
-            </a>
-          </p>
+              #AbhishekKtech
+            </a>  
+          </p> */}
+
         </div>
       </footer>
       <Toaster />
