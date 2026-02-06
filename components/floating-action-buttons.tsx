@@ -13,7 +13,9 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+// CHANGE 1: useSearchParams ko import karo
+import { useSearchParams } from "next/navigation"
 
 interface FloatingActionButtonsProps {
   isEditing: boolean
@@ -25,6 +27,20 @@ interface FloatingActionButtonsProps {
 
 export function FloatingActionButtons({ isEditing, onEditToggle, onSave, onCancel, data }: FloatingActionButtonsProps) {
   const [isDownloadDialogOpen, setIsDownloadDialogOpen] = useState(false)
+  
+  // CHANGE 2: URL check karne ka logic
+  const searchParams = useSearchParams()
+  const [isAdmin, setIsAdmin] = useState(false)
+
+  useEffect(() => {
+    // Agar URL mein ?admin=true likha hai, toh button dikhao
+    if (searchParams.get("admin") === "true") {
+      setIsAdmin(true)
+    }
+  }, [searchParams])
+
+  // CHANGE 3: Agar admin nahi hai, toh kuch mat dikhao (Hidden for public)
+  if (!isAdmin) return null
 
   return (
     <>

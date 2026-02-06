@@ -1,11 +1,13 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { DeploymentModal } from "@/components/deployment-modal"
 import { Rocket } from "lucide-react"
 import { motion } from "framer-motion"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
+// CHANGE 1: Import
+import { useSearchParams } from "next/navigation"
 
 interface FloatingDeployButtonProps {
   portfolioData: any 
@@ -13,6 +15,20 @@ interface FloatingDeployButtonProps {
 
 export function FloatingDeployButton({ portfolioData }: FloatingDeployButtonProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  
+  // CHANGE 2: URL check logic
+  const searchParams = useSearchParams()
+  const [isAdmin, setIsAdmin] = useState(false)
+
+  useEffect(() => {
+    // Check karo 'admin=true' hai kya
+    if (searchParams.get("admin") === "true") {
+      setIsAdmin(true)
+    }
+  }, [searchParams])
+
+  // CHANGE 3: Hide agar admin nahi hai
+  if (!isAdmin) return null
 
   return (
     <>
@@ -45,4 +61,3 @@ export function FloatingDeployButton({ portfolioData }: FloatingDeployButtonProp
     </>
   )
 }
-

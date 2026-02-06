@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, Suspense } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { SectionHeading } from "@/components/section-heading"
@@ -26,27 +26,25 @@ import { ProjectEditor } from "@/components/project-editor"
 import { ExperienceEditor } from "@/components/experience-editor"
 import { EducationEditor } from "@/components/education-editor"
 import { CertificationEditor } from "@/components/certification-editor"
-import { SkillsEditor } from "@/components/skills-editor" // Import SkillsEditor
+import { SkillsEditor } from "@/components/skills-editor"
 import { scrollToSection } from "@/lib/scroll-utils"
-import { FloatingDeployButton } from "@/components/floating-deploy-button" // Import FloatingDeployButton
+import { FloatingDeployButton } from "@/components/floating-deploy-button"
 import { LogoFormatSelect } from "@/components/logo-format-select"
 import { formatLogo } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
 import { useToast } from "@/components/ui/use-toast"
 import { validatePortfolioData } from "@/lib/validation"
-import { DynamicFavicon } from "@/components/dynamic-favicon" // Import DynamicFavicon
-import { HiringBadge } from "@/components/hiring-badge" // Add the import
-import { ContactForm } from "@/components/contact-form" // Import ContactForm
-import { LINKS } from "@/lib/config" // Add this import
+import { DynamicFavicon } from "@/components/dynamic-favicon"
+import { HiringBadge } from "@/components/hiring-badge"
+import { ContactForm } from "@/components/contact-form"
+import { LINKS } from "@/lib/config"
 
-// Add this type for our form
 type FormData = {
   name: string
   email: string
   message: string
 }
 
-// Define the initial data structure
 const initialData = {
   navigationLinks,
   socialLinks,
@@ -69,11 +67,9 @@ export default function Portfolio() {
   const { toast } = useToast()
 
   const handleSave = () => {
-    // Validate the data
     const validationErrors = validatePortfolioData(unsavedData)
 
     if (validationErrors.length > 0) {
-      // Show error toast with the first error
       toast({
         variant: "destructive",
         title: "Cannot save changes",
@@ -82,18 +78,15 @@ export default function Portfolio() {
       return
     }
 
-    // If validation passes, proceed with save
     setPortfolioData(unsavedData)
     setIsEditing(false)
 
-    // Show success toast
     toast({
       title: "Changes saved successfully",
       description: "Your portfolio has been updated.",
     })
   }
 
-  // Handle scroll for header styling
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0)
@@ -102,7 +95,6 @@ export default function Portfolio() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement
@@ -121,7 +113,6 @@ export default function Portfolio() {
   }, [isMenuOpen])
 
   useEffect(() => {
-    // Set initial width
     setWindowWidth(window.innerWidth)
 
     const handleResize = () => {
@@ -140,12 +131,12 @@ export default function Portfolio() {
 
   const onSubmit = (data: FormData) => {
     console.log(data)
-    // Add your form submission logic here
   }
 
   return (
     <div className="min-h-screen bg-background">
       <DynamicFavicon name={unsavedData.personalInfo.name} format={unsavedData.personalInfo.logoFormat} />
+      
       {/* Header/Navigation */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -154,7 +145,6 @@ export default function Portfolio() {
       >
         <div className="container mx-auto px-4">
           <nav className="flex items-center justify-between h-16">
-            {/* Logo and Format Select */}
             <div className="flex items-center gap-2 flex-shrink-0">
               <a href="#home" className="text-xl font-bold">
                 {formatLogo(unsavedData.personalInfo.name, unsavedData.personalInfo.logoFormat)}
@@ -176,14 +166,11 @@ export default function Portfolio() {
               )}
             </div>
 
-            {/* Desktop Navigation */}
             {windowWidth !== null && (
               <ul className="hidden sm:flex items-center gap-4 xl:gap-6 flex-wrap justify-end flex-1 px-4">
                 {unsavedData.navigationLinks
                   .filter((link) => {
-                    // Always show Home and About
                     if (link.name === "Home" || link.name === "About" || link.name === "Contact") return true
-                    // Check if corresponding section has content
                     if (link.name === "Projects") return unsavedData.projects.length > 0
                     if (link.name === "Skills") return unsavedData.skills.length > 0
                     if (link.name === "Experience") return unsavedData.experience.length > 0
@@ -193,10 +180,10 @@ export default function Portfolio() {
                   })
                   .map((link, index) => {
                     const isVisible =
-                      index < 2 || // Always show first 2
-                      (index < 4 && windowWidth >= 768) || // Show 4 at md
-                      (index < 6 && windowWidth >= 1024) || // Show 6 at lg
-                      windowWidth >= 1280 // Show all at xl
+                      index < 2 || 
+                      (index < 4 && windowWidth >= 768) || 
+                      (index < 6 && windowWidth >= 1024) || 
+                      windowWidth >= 1280 
 
                     return isVisible ? (
                       <li key={link.href} className="whitespace-nowrap">
@@ -226,10 +213,8 @@ export default function Portfolio() {
               </ul>
             )}
 
-            {/* Mobile Navigation Controls */}
             <div className="flex items-center gap-2">
               <ThemeToggle />
-              {/* Show hamburger menu on mobile or when there are hidden items */}
               <button
                 id="menu-button"
                 className="hover:bg-accent rounded-full p-2 transition-colors sm:hidden"
@@ -241,19 +226,17 @@ export default function Portfolio() {
                 {isMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
               </button>
 
-              {/* Show hamburger menu on larger screens only when there are hidden items */}
               {windowWidth !== null &&
                 windowWidth >= 640 &&
                 unsavedData.navigationLinks.some(
                   (_, index) =>
                     !(
-                      // Check if item is NOT visible
                       (
-                        index < 2 || // First 2 always visible
-                        (index < 4 && windowWidth >= 768) || // 4 visible at md
-                        (index < 6 && windowWidth >= 1024) || // 6 visible at lg
+                        index < 2 || 
+                        (index < 4 && windowWidth >= 768) || 
+                        (index < 6 && windowWidth >= 1024) || 
                         windowWidth >= 1280
-                      ) // All visible at xl
+                      ) 
                     ),
                 ) && (
                   <button
@@ -271,7 +254,6 @@ export default function Portfolio() {
           </nav>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && windowWidth !== null && (
           <div
             id="mobile-menu"
@@ -279,13 +261,10 @@ export default function Portfolio() {
           >
             <nav className="container mx-auto px-4 py-4">
               <ul className="flex flex-col gap-4">
-                {/* Show all items on mobile */}
                 {windowWidth < 640 &&
                   unsavedData.navigationLinks
                     .filter((link) => {
-                      // Always show Home and About
                       if (link.name === "Home" || link.name === "About" || link.name === "Contact") return true
-                      // Check if corresponding section has content
                       if (link.name === "Projects") return unsavedData.projects.length > 0
                       if (link.name === "Skills") return unsavedData.skills.length > 0
                       if (link.name === "Experience") return unsavedData.experience.length > 0
@@ -310,14 +289,13 @@ export default function Portfolio() {
                       </li>
                     ))}
 
-                {/* Show only hidden items on larger screens */}
                 {windowWidth >= 640 &&
                   unsavedData.navigationLinks.map((link, index) => {
                     const isVisible =
-                      index < 2 || // First 2 always visible
-                      (index < 4 && windowWidth >= 768) || // 4 visible at md
-                      (index < 6 && windowWidth >= 1024) || // 6 visible at lg
-                      windowWidth >= 1280 // All visible at xl
+                      index < 2 || 
+                      (index < 4 && windowWidth >= 768) || 
+                      (index < 6 && windowWidth >= 1024) || 
+                      windowWidth >= 1280 
 
                     return !isVisible ? (
                       <li key={link.href}>
@@ -343,7 +321,7 @@ export default function Portfolio() {
       </header>
 
       <main className="container mx-auto px-4 pt-16">
-        {/* Home Section - Added gradient animation */}
+        {/* Home Section */}
         <section
           id="home"
           className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-20 gradient-animation"
@@ -438,7 +416,6 @@ export default function Portfolio() {
                   <Input
                     value={unsavedData.personalInfo.resumeUrl || ""}
                     onChange={(e) => {
-                      // Allow any input, but store it in state
                       setUnsavedData({
                         ...unsavedData,
                         personalInfo: {
@@ -495,7 +472,7 @@ export default function Portfolio() {
           </motion.div>
         </section>
 
-        {/* About Section - Added dot pattern */}
+        {/* About Section */}
         <section id="about" className="py-20 relative">
           <AboutSection
             data={{
@@ -622,39 +599,43 @@ export default function Portfolio() {
             />
           </div>
         </section>
-        <FloatingDeployButton portfolioData={unsavedData} />
-        <FloatingActionButtons
-          isEditing={isEditing}
-          onEditToggle={() => {
-            setIsEditing(!isEditing)
-            // Reset Web3Forms API key when entering edit mode
-            if (!isEditing) {
-              setUnsavedData((prev) => ({
-                ...prev,
-                personalInfo: {
-                  ...prev.personalInfo,
-                  web3formsKey: "",
-                },
-              }))
-            }
-          }}
-          onSave={handleSave}
-          onCancel={() => {
-            setUnsavedData(portfolioData)
-            setIsEditing(false)
-          }}
-          data={unsavedData}
-        />
+
+        {/* Suspense Wrappers Added Here */}
+        <Suspense fallback={null}>
+          <FloatingDeployButton portfolioData={unsavedData} />
+        </Suspense>
+
+        <Suspense fallback={null}>
+          <FloatingActionButtons
+            isEditing={isEditing}
+            onEditToggle={() => {
+              setIsEditing(!isEditing)
+              if (!isEditing) {
+                setUnsavedData((prev) => ({
+                  ...prev,
+                  personalInfo: {
+                    ...prev.personalInfo,
+                    web3formsKey: "",
+                  },
+                }))
+              }
+            }}
+            onSave={handleSave}
+            onCancel={() => {
+              setUnsavedData(portfolioData)
+              setIsEditing(false)
+            }}
+            data={unsavedData}
+          />
+        </Suspense>
       </main>
 
       {/* Footer */}
-<footer className="border-t py-6 mt-20">
+      <footer className="border-t py-6 mt-20">
         <div className="container mx-auto px-4 text-center space-y-2 text-muted-foreground">
           <p>
             © {new Date().getFullYear()} {unsavedData.personalInfo.name}. All rights reserved.
           </p>
-
-          {/* Fixed: 'class' ko 'className' mein badal diya hai */}
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
             <a href="mailto:sharma.abhieee@gmail.com" className="hover:text-foreground transition-colors">
               📧 Contact
@@ -662,9 +643,8 @@ export default function Portfolio() {
             <a href="https://github.com/abhishekktech" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
               🛠 GitHub
             </a>
-            {/* Note: Yeh link tabhi chalega agar tumne feedback page banaya ho */}
-            <a className="hover:text-foreground transition-colors"  target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/abhishekktech">
-              💼 Linkdin
+            <a className="hover:text-foreground transition-colors" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/abhishekktech">
+              💼 LinkedIn
             </a>
           </div>
         </div>
