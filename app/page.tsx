@@ -648,29 +648,28 @@ export default function Portfolio() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t py-6 mt-20">
+<footer className="border-t py-6 mt-20">
         <div className="container mx-auto px-4 text-center space-y-2 text-muted-foreground">
           <p>
             © {new Date().getFullYear()} {unsavedData.personalInfo.name}. All rights reserved.
           </p>
 
-          <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground"><a href="mailto:sharma.abhieee@gmail.com" class="hover:text-foreground transition-colors">📧 Contact</a><a href="https://github.com/abhishekktech" target="_blank" rel="noopener noreferrer" class="hover:text-foreground transition-colors">🛠 GitHub</a><a class="hover:text-foreground transition-colors" href="/projecttwoclicks/feedback">📝 Feedback</a></div>
-
-
-          {/* <p>
-            Portfolio developed under{" "}
-            <a
-              href={LINKS.GITHUB_REPO}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-foreground underline transition-colors"
-            >
-              #AbhishekKtech
-            </a>  
-          </p> */}
-
+          {/* Fixed: 'class' ko 'className' mein badal diya hai */}
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-muted-foreground">
+            <a href="mailto:sharma.abhieee@gmail.com" className="hover:text-foreground transition-colors">
+              📧 Contact
+            </a>
+            <a href="https://github.com/abhishekktech" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors">
+              🛠 GitHub
+            </a>
+            {/* Note: Yeh link tabhi chalega agar tumne feedback page banaya ho */}
+            <a className="hover:text-foreground transition-colors" href="/feedback">
+              📝 Feedback
+            </a>
+          </div>
         </div>
       </footer>
+      
       <Toaster />
     </div>
   )
