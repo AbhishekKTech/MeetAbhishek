@@ -8,6 +8,9 @@ import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
 import { validateUrl, formatUrl } from "@/lib/utils"
 
+// CHANGE 1: Yahan humne tumhari Image URL ko save kar liya hai
+const DEFAULT_IMAGE = "https://firebasestorage.googleapis.com/v0/b/dropbox-clone-7b8ff.appspot.com/o/users%2Fuser_39Hf0HYSX3M659UUWL4vID7Yvcx%2Ffiles%2FtQfui5QG3iqCGrThI6Yh?alt=media&token=d51ee2c6-50a3-468f-8bd0-23821c05f620"
+
 interface AboutSectionProps {
   data: {
     bio: string
@@ -24,13 +27,15 @@ interface AboutSectionProps {
 }
 
 export function AboutSection({ data, isEditing, onChange }: AboutSectionProps) {
-  const [imageUrl, setImageUrl] = useState(data.imageUrl || "/placeholder.svg")
+  // CHANGE 2: Default state ab tumhari image uthayega (placeholder ki jagah)
+  const [imageUrl, setImageUrl] = useState(data.imageUrl || DEFAULT_IMAGE)
   const [imageError, setImageError] = useState<string | null>(null)
 
   const handleImageUrlChange = (value: string) => {
+    // CHANGE 3: Agar koi input khali kar de, toh wapas tumhari image aa jayegi
     if (!value) {
-      setImageUrl("/placeholder.svg")
-      onChange({ ...data, imageUrl: "/placeholder.svg" })
+      setImageUrl(DEFAULT_IMAGE)
+      onChange({ ...data, imageUrl: DEFAULT_IMAGE })
       setImageError(null)
       return
     }
@@ -53,16 +58,16 @@ export function AboutSection({ data, isEditing, onChange }: AboutSectionProps) {
       <div className="grid md:grid-cols-2 gap-8 items-center relative">
         <div className="relative aspect-square max-w-md w-full mx-auto group">
           <Image
-            src={imageUrl || "/placeholder.svg"}
+            src={imageUrl}
             alt={data.name}
             fill
             className="object-cover rounded-lg"
+            // Note: onError mein humne placeholder hi rakha hai, taaki agar tumhari link future mein expire ho jaye toh site crash na ho.
             onError={(e) => {
               const img = e.target as HTMLImageElement
               img.src = "/placeholder.svg"
-              setImageUrl("/placeholder.svg")
               if (isEditing) {
-                setImageError("Failed to load image. Please check the URL and try again.")
+                setImageError("Failed to load image. URL might be broken.")
               }
             }}
           />
@@ -71,7 +76,8 @@ export function AboutSection({ data, isEditing, onChange }: AboutSectionProps) {
               <div className="bg-background/80 backdrop-blur-sm p-4 rounded-lg w-full max-w-[80%]">
                 <label className="block text-sm font-medium mb-2">Image URL</label>
                 <Input
-                  value={imageUrl === "/placeholder.svg" ? "" : imageUrl}
+                  // Agar current image default wali hai, toh input box khali dikhaye taaki edit karna aasan ho
+                  value={imageUrl === DEFAULT_IMAGE ? "" : imageUrl}
                   onChange={(e) => handleImageUrlChange(e.target.value)}
                   placeholder="Enter image URL"
                   className={`editable-element ${imageError ? "border-destructive" : ""}`}
