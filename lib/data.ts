@@ -54,21 +54,21 @@ export const socialLinks = [
   {
     "platform": "custom",
     "url": "https://leetcode.com/u/abhieee-dev/",
-    "icon": "Globe"
+    icon: Globe
   }
 ]
 
 export const personalInfo = {
   "name": "Abhishek Sharma",
   "title": "Software Developer - Student at JSSATE Noida (MCA)",
-  "email": "your.email@example.com",
+  "email": "sharma.abhieee@gmail.com",
   "location": "Noida, IN",
   "bio": "I am a curious and responsible individual who strives for excellence in every aspect. capable of adapting to any work environment. Currently pursuing an MCA from JSSATE Noida, I am dedicated to upskilling and refining my personality to meet top-tier industry standards. When not behind the keyboard, you will find me exploring new ideas and focusing on self-growth.",
   "resumeUrl": "https://www.dropbox.com/scl/fi/hyku9uyitae78i62ln7ek/Abhishek-Resume-v1-2.pdf?rlkey=9ymq1hnffindqcz7vi0irr5ho&st=h9tpcwbd&dl=0",
-  "imageUrl": "https://previews.dropbox.com/p/thumb/AC7-ngR35W8C6AYC99d-YvA9Jfrgp9Bi-bWSVsDzCJcxTbFuUP3xIhHY5cNOyHX923-4mTMYk2BGarGAaKe_5eSLbnuCi7oYefbaaP9h2KZlV3mURBHlL5AyNYFiuet2hfUvrdgxoexsi_IDLPkdl-KSLAfzjc0B5VOOfblu0u-fkIKZhI3Ngu1MpD_DZ41C1ubQSNayIew-cUvokEP0dF6XypZZDXybZsIy-4nlI4eEep_ayNcTttZDWQNt9Qa3xrtWPHji9S2xntdPWS_toBgqCX6wZZf4-gyWQ9zN7mmY-7esLV9qwpZX0z5DFbVdP43EAUsZ8smmVCpknCeRCQu43K7vuZgvi6Q27hqJspQDMozpDoqaw3k1y6Wrd6ZXT4zYbLTj_40GHqIstjN4wFdp/p.png?is_prewarmed=true",
+  "imageUrl": "https://firebasestorage.googleapis.com/v0/b/dropbox-clone-7b8ff.appspot.com/o/users%2Fuser_39Hf0HYSX3M659UUWL4vID7Yvcx%2Ffiles%2FtQfui5QG3iqCGrThI6Yh?alt=media&token=d51ee2c6-50a3-468f-8bd0-23821c05f620",
   "logoFormat": "initials",
   "openToWork": true,
-  "web3formsKey": ""
+  "web3formsKey": "39884755-98b3-489e-bf45-2ab966095503"
 }
 
 export const projects = [
