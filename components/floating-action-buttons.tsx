@@ -143,7 +143,7 @@ export function FloatingActionButtons({ isEditing, onEditToggle, onSave, onCance
                 <p className="text-muted-foreground mt-1">
                   Check out our{" "}
                   <a
-                    href="https://github.com/abhishekbuilds/project-two-clicks#deploying-on-your-own"
+                    href="https://github.com/abhishekktech"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline inline-flex items-center gap-1"

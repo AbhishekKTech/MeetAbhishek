@@ -320,10 +320,10 @@ export function DeploymentModal({ isOpen, onClose, portfolioData }: DeploymentMo
                         rel="noopener noreferrer"
                         className="font-medium underline hover:text-primary inline-flex items-center gap-1"
                       >
-                        {DEPLOYMENT.DISCORD_LINK_TEXT}
+                        {DEPLOYMENT.GITHUB_LINK_TEXT}
                         <ExternalLink className="h-3 w-3" />
                       </a>{" "}
-                      for Project Two Clicks latest updates.
+                      follow on in github.
                     </p>
                     <p>
                       {DEPLOYMENT.GITHUB_MESSAGE}{" "}
