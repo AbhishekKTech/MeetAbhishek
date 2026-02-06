@@ -222,7 +222,7 @@ export const certifications = [
     "issueDate": "2019",
     "expiryDate": "",
     "credentialId": "OC1886086",
-    "badgeUrl": "https://www.dropbox.com/scl/fi/0iymz04kccszkerghcbv3/OCAJSE8.jpg?rlkey=5ikcq7wj3lbbdkr7lc6k8p0w1&st=sb62hllf&dl=1",
+    "badgeUrl": "https://uca16ba351aa597a59adc9e07cc1.dl.dropboxusercontent.com/cd/0/inline/C6avKbOhBwcQljFkimTJRi6iGPPPuex_r5mFuW9qNIdVTEjnNsPHVRZLp8sWAkee63vFlppKim7Kfm-nABns3DCorwYCNcOul8GfmJi-5hfvI-CNg2K7qGFBnFnIg7N8I2WxAf6L5mBVasjjiAY8_Ak5/file#",
     "credentialUrl": "https://www.dropbox.com/scl/fi/zy2sectohdaer87f2jkpt/OCAJSE8-certificate.pdf?rlkey=5mlkx323s4fceind7pi3ezm6r&st=cnfmu0nw&dl=1",
     "description": "Scored 90% on the Oracle Java certification exam, demonstrating my proficiency in encapsulation, conditional logic, multi-dimensional arrays, and operator precedence."
   }
