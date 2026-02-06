@@ -1,14 +1,14 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { SectionHeading } from "./section-heading"
 import EditableText from "./editable-text"
 import { Input } from "./ui/input"
 import { Textarea } from "./ui/textarea"
 import { validateUrl, formatUrl } from "@/lib/utils"
 
-// CHANGE 1: Yahan humne tumhari Image URL ko save kar liya hai
+// CHANGE 1: Tumhari Image URL constant
 const DEFAULT_IMAGE = "https://firebasestorage.googleapis.com/v0/b/dropbox-clone-7b8ff.appspot.com/o/users%2Fuser_39Hf0HYSX3M659UUWL4vID7Yvcx%2Ffiles%2FtQfui5QG3iqCGrThI6Yh?alt=media&token=d51ee2c6-50a3-468f-8bd0-23821c05f620"
 
 interface AboutSectionProps {
@@ -27,12 +27,25 @@ interface AboutSectionProps {
 }
 
 export function AboutSection({ data, isEditing, onChange }: AboutSectionProps) {
-  // CHANGE 2: Default state ab tumhari image uthayega (placeholder ki jagah)
-  const [imageUrl, setImageUrl] = useState(data.imageUrl || DEFAULT_IMAGE)
+  // CHANGE 2: Default logic (Placeholder ki jagah Default Image)
+  const initialImage = (!data.imageUrl || data.imageUrl === "/placeholder.svg") 
+    ? DEFAULT_IMAGE 
+    : data.imageUrl
+
+  const [imageUrl, setImageUrl] = useState(initialImage)
   const [imageError, setImageError] = useState<string | null>(null)
 
+  // useEffect taaki data change hone par image bhi update ho
+  useEffect(() => {
+    if (!data.imageUrl || data.imageUrl === "/placeholder.svg") {
+      setImageUrl(DEFAULT_IMAGE)
+    } else {
+      setImageUrl(data.imageUrl)
+    }
+  }, [data.imageUrl])
+
   const handleImageUrlChange = (value: string) => {
-    // CHANGE 3: Agar koi input khali kar de, toh wapas tumhari image aa jayegi
+    // CHANGE 3: Empty input handling
     if (!value) {
       setImageUrl(DEFAULT_IMAGE)
       onChange({ ...data, imageUrl: DEFAULT_IMAGE })
@@ -61,13 +74,20 @@ export function AboutSection({ data, isEditing, onChange }: AboutSectionProps) {
             src={imageUrl}
             alt={data.name}
             fill
+            // CHANGE 4: 'priority' add kiya hai taaki image turant load ho
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover rounded-lg"
-            // Note: onError mein humne placeholder hi rakha hai, taaki agar tumhari link future mein expire ho jaye toh site crash na ho.
             onError={(e) => {
               const img = e.target as HTMLImageElement
-              img.src = "/placeholder.svg"
+              // Error fallback logic
+              if (img.src !== DEFAULT_IMAGE) {
+                 img.src = DEFAULT_IMAGE
+              } else {
+                 img.src = "/placeholder.svg"
+              }
               if (isEditing) {
-                setImageError("Failed to load image. URL might be broken.")
+                setImageError("Failed to load image.")
               }
             }}
           />
@@ -76,7 +96,6 @@ export function AboutSection({ data, isEditing, onChange }: AboutSectionProps) {
               <div className="bg-background/80 backdrop-blur-sm p-4 rounded-lg w-full max-w-[80%]">
                 <label className="block text-sm font-medium mb-2">Image URL</label>
                 <Input
-                  // Agar current image default wali hai, toh input box khali dikhaye taaki edit karna aasan ho
                   value={imageUrl === DEFAULT_IMAGE ? "" : imageUrl}
                   onChange={(e) => handleImageUrlChange(e.target.value)}
                   placeholder="Enter image URL"
