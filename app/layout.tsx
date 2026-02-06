@@ -7,6 +7,7 @@ import type React from "react"
 
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] })
 
+
 export async function generateMetadata(): Promise<Metadata> {
   const skillKeywords = skills.flatMap((category) => category.items.map((item) => item.name))
   const projectKeywords = projects.flatMap((project) => project.tags)
@@ -21,6 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const twitterUrl = socialLinks.find((link) => link.platform === "twitter")?.url
 
   return {
+    metadataBase: new URL('https://meetabhishek.in'), // Yeh line zaroori hai SEO ke liye
     title: {
       default: `${personalInfo.name} - ${personalInfo.title}`,
       template: `%s | ${personalInfo.name}`,
@@ -32,6 +34,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       type: "website",
       locale: "en_US",
+      url: "https://meetabhishek.in",
       title: `${personalInfo.name} - ${personalInfo.title}`,
       description: enhancedDescription,
       siteName: personalInfo.name,
