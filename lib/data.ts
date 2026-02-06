@@ -219,11 +219,11 @@ export const certifications = [
   {
     "title": "Oracle Certified Associate, Java SE 8 Programmer",
     "issuer": "Oracle",
-    "issueDate": "2019",
+    "issueDate": "2023",
     "expiryDate": "",
     "credentialId": "OC1886086",
     "badgeUrl": "https://images.credly.com/size/340x340/images/a9848abf-f8bd-474d-a9b4-6086da11a916/Oracle_Associates_Badge__1_.png",
-    "credentialUrl": "https://www.dropbox.com/scl/fi/zy2sectohdaer87f2jkpt/OCAJSE8-certificate.pdf?rlkey=5mlkx323s4fceind7pi3ezm6r&st=cnfmu0nw&dl=1",
+    "credentialUrl": "https://www.dropbox.com/scl/fi/hw211zx5hm9cvvtpyaz27/OCAJSE8-certificate.pdf?rlkey=jnvvwtwf5534v3n5fv4h04eui&st=kzamvl8n&raw=1",
     "description": "Scored 90% on the Oracle Java certification exam, demonstrating my proficiency in encapsulation, conditional logic, multi-dimensional arrays, and operator precedence."
   }
 ]
