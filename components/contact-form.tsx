@@ -25,6 +25,10 @@ export function ContactForm({ apiKey, onApiKeyChange, isEditing = false }: Conta
   const [isSubmitting, setIsSubmitting] = useState(false)
   const { toast } = useToast()
 
+  // CHANGE 1: Yahan humne tumhari key ko default bana diya hai.
+  // Agar upar se 'apiKey' nahi aayi, toh ye hardcoded key use hogi.
+  const effectiveKey = apiKey || "39884755-98b3-489e-bf45-2ab966095503"
+
   const {
     register,
     handleSubmit,
@@ -33,7 +37,8 @@ export function ContactForm({ apiKey, onApiKeyChange, isEditing = false }: Conta
   } = useForm<FormData>()
 
   const onSubmit = async (data: FormData) => {
-    if (!apiKey) {
+    // CHANGE 2: Check 'effectiveKey' instead of 'apiKey'
+    if (!effectiveKey) {
       toast({
         variant: "destructive",
         title: "Configuration Error",
@@ -46,7 +51,8 @@ export function ContactForm({ apiKey, onApiKeyChange, isEditing = false }: Conta
 
     try {
       const formData = new FormData()
-      formData.append("access_key", apiKey)
+      // CHANGE 3: Use 'effectiveKey' here
+      formData.append("access_key", effectiveKey) 
       formData.append("name", data.name)
       formData.append("email", data.email)
       formData.append("message", data.message)
@@ -78,7 +84,8 @@ export function ContactForm({ apiKey, onApiKeyChange, isEditing = false }: Conta
     }
   }
 
-  if (!apiKey && !isEditing) {
+  // CHANGE 4: Logic update - Agar effectiveKey hai toh form dikhega
+  if (!effectiveKey && !isEditing) {
     return (
       <div className="text-center space-y-4 py-8">
         <p className="text-muted-foreground">Contact form is not configured.</p>
@@ -89,7 +96,8 @@ export function ContactForm({ apiKey, onApiKeyChange, isEditing = false }: Conta
 
   return (
     <div className="space-y-6">
-      {isEditing && <ApiKeyForm currentKey={apiKey} onSave={(key) => onApiKeyChange?.(key)} />}
+      {/* Agar edit mode on hai, toh user nayi key bhi daal sakta hai */}
+      {isEditing && <ApiKeyForm currentKey={effectiveKey} onSave={(key) => onApiKeyChange?.(key)} />}
 
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
         <div>
@@ -155,7 +163,7 @@ export function ContactForm({ apiKey, onApiKeyChange, isEditing = false }: Conta
           )}
         </div>
 
-        <Button type="submit" className="w-full" disabled={isSubmitting || !apiKey}>
+        <Button type="submit" className="w-full" disabled={isSubmitting || !effectiveKey}>
           {isSubmitting ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
