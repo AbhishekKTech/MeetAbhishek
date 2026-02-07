@@ -100,7 +100,7 @@ export const projects = [
     "links": [
       {
         "name": "Github",
-        "url": "https://github.com/abhishekbuilds/StreamAnalytics",
+        "url": "https://github.com/abhishekktech",
         icon: Github
       }
     ]
