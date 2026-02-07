@@ -143,7 +143,8 @@ export default function Portfolio() {
           isScrolled ? "bg-background/80 backdrop-blur-sm border-b" : "bg-background"
         }`}
       >
-        <div className="container mx-auto px-4">
+        {/* UPDATED: Added responsive padding (px-6 md:px-12 lg:px-24) and max-w-7xl */}
+        <div className="container mx-auto px-6 md:px-12 lg:px-24 max-w-7xl">
           <nav className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2 flex-shrink-0">
               <a href="#home" className="text-xl font-bold">
@@ -320,7 +321,8 @@ export default function Portfolio() {
         )}
       </header>
 
-      <main className="container mx-auto px-4 pt-16">
+      {/* UPDATED: Added responsive padding (px-6 md:px-12 lg:px-24) and max-w-7xl */}
+      <main className="container mx-auto px-6 md:px-12 lg:px-24 max-w-7xl pt-16">
         {/* Home Section */}
         <section
           id="home"
@@ -600,7 +602,7 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Suspense Wrappers Added Here */}
+        {/* Suspense Wrappers */}
         <Suspense fallback={null}>
           <FloatingDeployButton portfolioData={unsavedData} />
         </Suspense>
@@ -632,7 +634,8 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="border-t py-6 mt-20">
-        <div className="container mx-auto px-4 text-center space-y-2 text-muted-foreground">
+        {/* UPDATED: Added responsive padding (px-6 md:px-12 lg:px-24) and max-w-7xl */}
+        <div className="container mx-auto px-6 md:px-12 lg:px-24 max-w-7xl text-center space-y-2 text-muted-foreground">
           <p>
             © {new Date().getFullYear()} {unsavedData.personalInfo.name}. All rights reserved.
           </p>
