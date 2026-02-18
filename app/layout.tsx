@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { JetBrains_Mono } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { personalInfo, skills, projects, experience, socialLinks } from "@/lib/data"
 import type React from "react"
@@ -80,6 +81,7 @@ export default function RootLayout({
       </head>
       <body className={jetbrainsMono.className} suppressHydrationWarning>
         <ThemeProvider>{children}</ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
