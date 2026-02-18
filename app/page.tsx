@@ -143,8 +143,8 @@ export default function Portfolio() {
           isScrolled ? "bg-background/80 backdrop-blur-sm border-b" : "bg-background"
         }`}
       >
-        {/* UPDATED: Added responsive padding (px-6 md:px-12 lg:px-24) and max-w-7xl */}
-        <div className="container mx-auto px-6 md:px-12 lg:px-24 max-w-7xl">
+        {/* BALANCED PADDING: px-4 md:px-8 lg:px-12 */}
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
           <nav className="flex items-center justify-between h-16">
             <div className="flex items-center gap-2 flex-shrink-0">
               <a href="#home" className="text-xl font-bold">
@@ -321,8 +321,8 @@ export default function Portfolio() {
         )}
       </header>
 
-      {/* UPDATED: Added responsive padding (px-6 md:px-12 lg:px-24) and max-w-7xl */}
-      <main className="container mx-auto px-6 md:px-12 lg:px-24 max-w-7xl pt-16">
+      {/* BALANCED PADDING: px-4 md:px-8 lg:px-12 */}
+      <main className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl pt-16">
         {/* Home Section */}
         <section
           id="home"
@@ -634,8 +634,8 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="border-t py-6 mt-20">
-        {/* UPDATED: Added responsive padding (px-6 md:px-12 lg:px-24) and max-w-7xl */}
-        <div className="container mx-auto px-6 md:px-12 lg:px-24 max-w-7xl text-center space-y-2 text-muted-foreground">
+        {/* BALANCED PADDING: px-4 md:px-8 lg:px-12 */}
+        <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl text-center space-y-2 text-muted-foreground">
           <p>
             © {new Date().getFullYear()} {unsavedData.personalInfo.name}. All rights reserved.
           </p>
