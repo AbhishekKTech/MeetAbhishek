@@ -54,7 +54,7 @@ export const socialLinks = [
   {
     "platform": "custom",
     "url": "https://leetcode.com/u/abhieee-dev/",
-    icon: Globe
+    "icon": "Globe"
   }
 ]
 
@@ -68,7 +68,7 @@ export const personalInfo = {
   "imageUrl": "https://firebasestorage.googleapis.com/v0/b/dropbox-clone-7b8ff.appspot.com/o/users%2Fuser_39Hf0HYSX3M659UUWL4vID7Yvcx%2Ffiles%2FtQfui5QG3iqCGrThI6Yh?alt=media&token=d51ee2c6-50a3-468f-8bd0-23821c05f620",
   "logoFormat": "initials",
   "openToWork": true,
-  "web3formsKey": "39884755-98b3-489e-bf45-2ab966095503"
+  "web3formsKey": ""
 }
 
 export const projects = [
@@ -213,7 +213,7 @@ export const education = [
     "isOngoing": false,
     "description": ""
   },
-    {
+  {
     "degree": "Intermediate",
     "institution": "B.S. Inter College",
     "location": "Noida, India",
@@ -234,5 +234,15 @@ export const certifications = [
     "badgeUrl": "https://images.credly.com/size/340x340/images/a9848abf-f8bd-474d-a9b4-6086da11a916/Oracle_Associates_Badge__1_.png",
     "credentialUrl": "https://www.dropbox.com/scl/fi/hw211zx5hm9cvvtpyaz27/OCAJSE8-certificate.pdf?rlkey=jnvvwtwf5534v3n5fv4h04eui&st=kzamvl8n&raw=1",
     "description": "Scored 90% on the Oracle Java certification exam, demonstrating my proficiency in encapsulation, conditional logic, multi-dimensional arrays, and operator precedence."
+  },
+  {
+    "title": "Postman API Fundamentals Student Expert",
+    "issuer": "Postman",
+    "issueDate": "2023",
+    "expiryDate": "",
+    "credentialId": "64b7fa12b702cd40033fc94b",
+    "credentialUrl": "https://badges.parchment.com/public/assertions/XiAeeeOLToS7Z8PM3lYXLg?identity__email=abhishek859573@gmail.com",
+    "description": "A hand’s on certification that teaches Me:\n\nWhat APIs are and their importance in modern software development\nHow to use Postman to work with APIs\nMaking GET, POST, PATCH, and DELETE requests\nQuery parameters, bodies, headers, response codes\nBasic scripting\nAPI Key Authorization\nHow to use APIs in your applications",
+    "badgeUrl": "https://api.badgr.io/public/assertions/XiAeeeOLToS7Z8PM3lYXLg/image"
   }
 ]
