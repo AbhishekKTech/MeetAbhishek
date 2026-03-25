@@ -76,6 +76,8 @@ export function AboutSection({ data, isEditing, onChange }: AboutSectionProps) {
             fill
             // CHANGE 4: 'priority' add kiya hai taaki image turant load ho
             priority
+            // FIX: Added 'unoptimized' to prevent blinking/loading issues with external URLs
+            unoptimized
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover rounded-lg"
             onError={(e) => {

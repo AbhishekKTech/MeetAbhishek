@@ -104,6 +104,23 @@ export const projects = [
         icon: Github
       }
     ]
+  },
+  {
+    "title": "The Invisible Boy Who Refused to Stay Average",
+    "description": "Wrote and structured a complete eBook\nPublished on Amazon Kindle (KDP)\nFocused on real-life student problems like procrastination, self-doubt, and discipline",
+    "tags": [
+      "Writing",
+      "Self Growth",
+      "KDP"
+    ],
+    "links": [
+      {
+        "name": "View Book",
+        "url": "https://www.amazon.in/dp/B0GTPJVXW2?ref=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&ref_=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&social_share=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&bestFormat=true",
+        icon: Globe
+      }
+    ],
+    "inDevelopment": false
   }
 ]
 
