@@ -89,23 +89,6 @@ export const projects = [
     "inDevelopment": false
   },
   {
-    "title": "Realtime Stock Market Analytics",
-    "description": "Built a real-time stock market analytics platform using Python, Flask, Kafka, and Spark, reducing data delays from 8s to 3s and boosting throughput by 60%. Leveraged Chart.js for interactive visualizations, enabling users to track live market trends with engaging, low-latency dashboards",
-    "tags": [
-      "Kafka",
-      "Apache Spark",
-      "Python",
-      "Chart.js"
-    ],
-    "links": [
-      {
-        "name": "Github",
-        "url": "https://github.com/abhishekktech",
-        icon: Github
-      }
-    ]
-  },
-  {
     "title": "The Invisible Boy Who Refused to Stay Average",
     "description": "Wrote and structured a complete eBook\nPublished on Amazon Kindle (KDP)\nFocused on real-life student problems like procrastination, self-doubt, and discipline",
     "tags": [
@@ -118,6 +101,23 @@ export const projects = [
         "name": "View Book",
         "url": "https://www.amazon.in/dp/B0GTPJVXW2?ref=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&ref_=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&social_share=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&bestFormat=true",
         icon: Globe
+      }
+    ],
+    "inDevelopment": true
+  },
+  {
+    "title": "Guesser Game: A Java-based Multiplayer Console Experience",
+    "description": "A CLI-based multiplayer game built with Core Java. It features a unique Umpire-Guesser-Player architecture to demonstrate Object-Oriented Programming (OOP) principles. The system handles secret number inputs, multiple player guesses, and logic-based winner detection. Ideal for showcasing fundamental Java skills like the Scanner class, conditional statements, and modular class design.",
+    "tags": [
+      "Java",
+      "OOPs",
+      "LogicBuilding"
+    ],
+    "links": [
+      {
+        "name": "Github Repo",
+        "url": "https://github.com/AbhishekKTech/Guesser-game",
+        icon: Github
       }
     ],
     "inDevelopment": false
