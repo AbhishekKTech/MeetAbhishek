@@ -64,8 +64,8 @@ export const personalInfo = {
   "email": "sharma.abhieee@gmail.com",
   "location": "Noida, IN",
   "bio": "I am a curious and responsible individual who strives for excellence in every aspect. capable of adapting to any work environment. Currently pursuing an MCA from JSSATE Noida, I am dedicated to upskilling and refining my personality to meet top-tier industry standards. When not behind the keyboard, you will find me exploring new ideas and focusing on self-growth.",
-  "resumeUrl": "https://www.dropbox.com/scl/fi/hyku9uyitae78i62ln7ek/Abhishek-Resume-v1-2.pdf?rlkey=9ymq1hnffindqcz7vi0irr5ho&st=h9tpcwbd&raw=1",
-  "imageUrl": "https://dl.dropboxusercontent.com/scl/fi/04o7ysv8tytj7ea3n1mrd/WhatsApp-Image-2026-03-25-at-12.01.47-AM-1.webp?rlkey=nfax4r9aur9cp41kk7xo5qifc",
+  "resumeUrl": "https://www.dropbox.com/scl/fi/wbb31yu5mqer23ph7t5xd/Abhishek-Resume-Java1.pdf?rlkey=avoihrb8j7522p75gdvsp8gyg&st=wvmj6g78&raw=1",
+  "imageUrl": "https://www.dropbox.com/scl/fi/7g14r811ugid2rl0r3hip/photo.webp?rlkey=taioufzyzd60eekx5igf24nju&raw=1",
   "logoFormat": "initials",
   "openToWork": true,
   "web3formsKey": ""
@@ -243,14 +243,14 @@ export const education = [
 
 export const certifications = [
   {
-    "title": "Oracle Certified Associate, Java SE 8 Programmer",
-    "issuer": "Oracle",
+    "title": "Object Oriented Programming in Java",
+    "issuer": "University of California San Diego, Coursera",
     "issueDate": "2023",
     "expiryDate": "",
-    "credentialId": "OC1886086",
-    "badgeUrl": "https://images.credly.com/size/340x340/images/a9848abf-f8bd-474d-a9b4-6086da11a916/Oracle_Associates_Badge__1_.png",
-    "credentialUrl": "https://www.dropbox.com/scl/fi/hw211zx5hm9cvvtpyaz27/OCAJSE8-certificate.pdf?rlkey=jnvvwtwf5534v3n5fv4h04eui&st=kzamvl8n&raw=1",
-    "description": "Scored 90% on the Oracle Java certification exam, demonstrating my proficiency in encapsulation, conditional logic, multi-dimensional arrays, and operator precedence."
+    "credentialId": "TLFPJDSSAZTY",
+    "badgeUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Coursera_logo_%282020%29.svg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/TLFPJDSSAZTY",
+    "description": "Learned about Software Documentation\nSoftware Documentation User Interface (UI)\nUser Interface (UI)\nCategory: Java Programming\nJava Programming\nCategory: Programming Principles\nProgramming Principles\nCategory: Java\nJava\nCategory: Software Engineering\nSoftware Engineering\nCategory: Geospatial Mapping\nGeospatial Mapping\nCategory: Algorithms\nAlgorithms\nCategory: Computer Programming\nComputer Programming\nCategory: Object Oriented Design\nObject Oriented Design\nCategory: Interactiv"
   },
   {
     "title": "Postman API Fundamentals Student Expert",
