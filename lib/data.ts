@@ -60,7 +60,7 @@ export const socialLinks = [
 
 export const personalInfo = {
   "name": "Abhishek Sharma",
-  "title": "Software Developer - Student at JSSATE Noida (MCA)",
+  "title": "Backend Developer | Java, Spring Boot & RESTful APIs",
   "email": "sharma.abhieee@gmail.com",
   "location": "Noida, IN",
   "bio": "I am a curious and responsible individual who strives for excellence in every aspect. capable of adapting to any work environment. Currently pursuing an MCA from JSSATE Noida, I am dedicated to upskilling and refining my personality to meet top-tier industry standards. When not behind the keyboard, you will find me exploring new ideas and focusing on self-growth.",
@@ -72,22 +72,6 @@ export const personalInfo = {
 }
 
 export const projects = [
-  {
-    "title": "CyberZet Digital Solutions",
-    "description": "A digital solutions Site to meet your business goals. Providing services in website development, digital marketing, graphic design, and online courses to boost your digital presence.",
-    "tags": [
-      "React",
-      "JavaScript"
-    ],
-    "links": [
-      {
-        "name": "CyberZet.in",
-        "url": "https://thecyberzet.in/",
-        icon: Globe
-      }
-    ],
-    "inDevelopment": false
-  },
   {
     "title": "The Invisible Boy Who Refused to Stay Average",
     "description": "Wrote and structured a complete eBook\nPublished on Amazon Kindle (KDP)\nFocused on real-life student problems like procrastination, self-doubt, and discipline",
@@ -106,18 +90,54 @@ export const projects = [
     "inDevelopment": true
   },
   {
-    "title": "Guesser Game: A Java-based Multiplayer Console Experience",
-    "description": "A CLI-based multiplayer game built with Core Java. It features a unique Umpire-Guesser-Player architecture to demonstrate Object-Oriented Programming (OOP) principles. The system handles secret number inputs, multiple player guesses, and logic-based winner detection. Ideal for showcasing fundamental Java skills like the Scanner class, conditional statements, and modular class design.",
+    "title": "High-Concurrency E-Commerce Checkout Engine",
+    "description": "• Architected a scalable RESTful API backend for an e-commerce checkout system capable of processing concurrent\ntransaction requests efficiently.\n• Implemented strict transaction management and pessimistic locking mechanisms at the database level to resolve race\nconditions and completely prevent inventory overselling during high-traffic scenarios.",
     "tags": [
       "Java",
-      "OOPs",
-      "LogicBuilding"
+      "Spring Boot",
+      "MySQL",
+      "Postman"
     ],
     "links": [
       {
         "name": "Github Repo",
-        "url": "https://github.com/AbhishekKTech/Guesser-game",
+        "url": "https://github.com/AbhishekKTech/ecommerce-engine",
         icon: Github
+      }
+    ],
+    "inDevelopment": false
+  },
+  {
+    "title": "Enterprise IT Ticketing & Resolution System",
+    "description": "• Developed a B2B role-based backend engine to automate customer support workflows, automatically mapping incoming\nclient queries to specific priority queues.\n• Integrated JWT (JSON Web Tokens) for secure authentication and designed robust relational database schemas to\nefficiently track the ticket lifecycle, status, and resolution metrics.",
+    "tags": [
+      "Java",
+      "Spring Boot",
+      "Hibernate",
+      "JWT Security"
+    ],
+    "links": [
+      {
+        "name": "Github Repo",
+        "url": "https://github.com/AbhishekKTech/ecommerce-engine",
+        icon: Github
+      }
+    ],
+    "inDevelopment": false
+  },
+
+{
+    "title": "CyberZet Digital Solutions",
+    "description": "A digital solutions Site to meet your business goals. Providing services in website development, digital marketing, graphic design, and online courses to boost your digital presence.",
+    "tags": [
+      "React",
+      "JavaScript"
+    ],
+    "links": [
+      {
+        "name": "CyberZet.in",
+        "url": "https://thecyberzet.in/",
+        icon: Globe
       }
     ],
     "inDevelopment": false
@@ -147,6 +167,10 @@ export const skills = [
       {
         "name": "C++",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+      },
+      {
+        "name": "Kotlin",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
       }
     ]
   },
@@ -154,8 +178,8 @@ export const skills = [
     "category": "Databases & Messaging",
     "items": [
       {
-        "name": "MongoDB",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+        "name": "Mysql",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
       }
     ]
   },
@@ -167,8 +191,8 @@ export const skills = [
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
       },
       {
-        "name": "AWS",
-        "icon": "https://www.dropbox.com/scl/fi/5q3sbh6jkpbg76rpye80q/aws-icon.png?rlkey=ldi13y3rmrjlb1c1i9vtvfire&st=lpelux0v&dl=1"
+        "name": "Postman",
+        "icon": "https://mailosaur.com/images/frameworks/postman.png"
       }
     ]
   },
@@ -178,6 +202,10 @@ export const skills = [
       {
         "name": "Bootstrap",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+      },
+      {
+        "name": "Spring",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
       }
     ]
   },
@@ -196,20 +224,20 @@ export const skills = [
   }
 ]
 
-export const experience = [
-  {
-    "title": "Website Developer Intern",
-    "company": "Live Tech Service",
-    "location": "Greater Noida, India",
-    "startYear": "2023",
-    "endYear": "2024",
-    "isOngoing": false,
-    "description": [
-      "Built responsive WordPress & Shopify websites and handled ongoing maintenance for continuous availability.",
-      "Executed hands-on SEO strategies to boost website visibility and drive key organizational growth."
-    ]
-  }
-]
+// export const experience = [
+//   {
+//     "title": "Website Developer Intern",
+//     "company": "Live Tech Service",
+//     "location": "Greater Noida, India",
+//     "startYear": "2023",
+//     "endYear": "2024",
+//     "isOngoing": false,
+//     "description": [
+//       "Built responsive WordPress & Shopify websites and handled ongoing maintenance for continuous availability.",
+//       "Executed hands-on SEO strategies to boost website visibility and drive key organizational growth."
+//     ]
+//   }
+// ]
 
 export const education = [
   {
