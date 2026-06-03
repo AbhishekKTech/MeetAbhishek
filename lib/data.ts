@@ -225,6 +225,18 @@ export const skills = [
 ]
 
 export const experience = [
+  {
+    "title": "Website Developer Intern",
+    "company": "Live Tech Service",
+    "location": "Greater Noida, India",
+    "startYear": "2023",
+    "endYear": "2024",
+    "isOngoing": false,
+    "description": [
+      "Built responsive WordPress & Shopify websites and handled ongoing maintenance for continuous availability.",
+      "Executed hands-on SEO strategies to boost website visibility and drive key organizational growth."
+    ]
+  }
 ]
 
 export const education = [
