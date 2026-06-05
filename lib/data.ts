@@ -143,6 +143,42 @@ export const projects = [
   }
 ]
 
+
+export const certifications = [
+  {
+    "title": "Object Oriented Programming in Java",
+    "issuer": "University of California San Diego, Coursera",
+    "issueDate": "2023",
+    "expiryDate": "",
+    "credentialId": "TLFPJDSSAZTY",
+    "badgeUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Coursera_logo_%282020%29.svg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/TLFPJDSSAZTY",
+    "description": "Learned about Software Documentation\nSoftware Documentation User Interface (UI)\nUser Interface (UI)\nCategory: Java Programming\nJava Programming\nCategory: Programming Principles\nProgramming Principles\nCategory: Java\nJava\nCategory: Software Engineering\nSoftware Engineering\nCategory: Geospatial Mapping\nGeospatial Mapping\nCategory: Algorithms\nAlgorithms\nCategory: Computer Programming\nComputer Programming\nCategory: Object Oriented Design\nObject Oriented Design\nCategory: Interactiv"
+  },
+  {
+    "title": "Postman API Fundamentals Student Expert",
+    "issuer": "Postman",
+    "issueDate": "2023",
+    "expiryDate": "",
+    "credentialId": "64b7fa12b702cd40033fc94b",
+    "credentialUrl": "https://badges.parchment.com/public/assertions/XiAeeeOLToS7Z8PM3lYXLg?identity__email=abhishek859573@gmail.com",
+    "description": "A hand’s on certification that teaches Me:\n\nWhat APIs are and their importance in modern software development\nHow to use Postman to work with APIs\nMaking GET, POST, PATCH, and DELETE requests\nQuery parameters, bodies, headers, response codes\nBasic scripting\nAPI Key Authorization\nHow to use APIs in your applications",
+    "badgeUrl": "https://api.badgr.io/public/assertions/XiAeeeOLToS7Z8PM3lYXLg/image"
+  },
+  {
+    "title": "Java (Basic) Certificate",
+    "issuer": "HackerRank",
+    "issueDate": "2026",
+    "expiryDate": "",
+    "credentialId": "F9AF59A88A49",
+    "credentialUrl": "https://www.hackerrank.com/certificates/F9AF59A88A49",
+    "description": "It covers topics in Java language such as classes, data structures, inheritance, exception handling, etc.",
+    "badgeUrl": "https://images.g2crowd.com/uploads/product/image/dc8855248a4baee3ab92e3b9bf5273af/hackerrank-for-developers.png"
+  }
+]
+
+
+
 export const skills = [
   {
     "category": "Languages",
@@ -268,35 +304,3 @@ export const education = [
   }
 ]
 
-export const certifications = [
-  {
-    "title": "Object Oriented Programming in Java",
-    "issuer": "University of California San Diego, Coursera",
-    "issueDate": "2023",
-    "expiryDate": "",
-    "credentialId": "TLFPJDSSAZTY",
-    "badgeUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Coursera_logo_%282020%29.svg",
-    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/TLFPJDSSAZTY",
-    "description": "Learned about Software Documentation\nSoftware Documentation User Interface (UI)\nUser Interface (UI)\nCategory: Java Programming\nJava Programming\nCategory: Programming Principles\nProgramming Principles\nCategory: Java\nJava\nCategory: Software Engineering\nSoftware Engineering\nCategory: Geospatial Mapping\nGeospatial Mapping\nCategory: Algorithms\nAlgorithms\nCategory: Computer Programming\nComputer Programming\nCategory: Object Oriented Design\nObject Oriented Design\nCategory: Interactiv"
-  },
-  {
-    "title": "Postman API Fundamentals Student Expert",
-    "issuer": "Postman",
-    "issueDate": "2023",
-    "expiryDate": "",
-    "credentialId": "64b7fa12b702cd40033fc94b",
-    "credentialUrl": "https://badges.parchment.com/public/assertions/XiAeeeOLToS7Z8PM3lYXLg?identity__email=abhishek859573@gmail.com",
-    "description": "A hand’s on certification that teaches Me:\n\nWhat APIs are and their importance in modern software development\nHow to use Postman to work with APIs\nMaking GET, POST, PATCH, and DELETE requests\nQuery parameters, bodies, headers, response codes\nBasic scripting\nAPI Key Authorization\nHow to use APIs in your applications",
-    "badgeUrl": "https://api.badgr.io/public/assertions/XiAeeeOLToS7Z8PM3lYXLg/image"
-  },
-  {
-    "title": "Java (Basic) Certificate",
-    "issuer": "HackerRank",
-    "issueDate": "2026",
-    "expiryDate": "",
-    "credentialId": "F9AF59A88A49",
-    "credentialUrl": "https://www.hackerrank.com/certificates/F9AF59A88A49",
-    "description": "It covers topics in Java language such as classes, data structures, inheritance, exception handling, etc.",
-    "badgeUrl": "https://images.g2crowd.com/uploads/product/image/dc8855248a4baee3ab92e3b9bf5273af/hackerrank-for-developers.png"
-  }
-]
