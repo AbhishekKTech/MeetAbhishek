@@ -64,7 +64,7 @@ export const personalInfo = {
   "email": "sharma.abhieee@gmail.com",
   "location": "Noida, IN",
   "bio": "I am a curious and responsible individual who strives for excellence in every aspect. capable of adapting to any work environment. Currently pursuing an MCA from JSSATE Noida, I am dedicated to upskilling and refining my personality to meet top-tier industry standards. When not behind the keyboard, you will find me exploring new ideas and focusing on self-growth.",
-  "resumeUrl": "https://www.dropbox.com/scl/fi/wbb31yu5mqer23ph7t5xd/Abhishek-Resume-Java1.pdf?rlkey=avoihrb8j7522p75gdvsp8gyg&st=wvmj6g78&raw=1",
+  "resumeUrl": "https://www.dropbox.com/scl/fi/0tyu3wzp0ml5ryl64t105/Abhishek-Resume-Java1-1.pdf?rlkey=sof3vfzc6czpvnv37d4k5daog&st=4apciivk&raw=1",
   "imageUrl": "https://www.dropbox.com/scl/fi/7g14r811ugid2rl0r3hip/photo.webp?rlkey=taioufzyzd60eekx5igf24nju&raw=1",
   "logoFormat": "initials",
   "openToWork": true,
@@ -125,8 +125,7 @@ export const projects = [
     ],
     "inDevelopment": false
   },
-
-{
+  {
     "title": "CyberZet Digital Solutions",
     "description": "A digital solutions Site to meet your business goals. Providing services in website development, digital marketing, graphic design, and online courses to boost your digital presence.",
     "tags": [
@@ -289,5 +288,15 @@ export const certifications = [
     "credentialUrl": "https://badges.parchment.com/public/assertions/XiAeeeOLToS7Z8PM3lYXLg?identity__email=abhishek859573@gmail.com",
     "description": "A hand’s on certification that teaches Me:\n\nWhat APIs are and their importance in modern software development\nHow to use Postman to work with APIs\nMaking GET, POST, PATCH, and DELETE requests\nQuery parameters, bodies, headers, response codes\nBasic scripting\nAPI Key Authorization\nHow to use APIs in your applications",
     "badgeUrl": "https://api.badgr.io/public/assertions/XiAeeeOLToS7Z8PM3lYXLg/image"
+  },
+  {
+    "title": "Java (Basic) Certificate",
+    "issuer": "HackerRank",
+    "issueDate": "2026",
+    "expiryDate": "",
+    "credentialId": "F9AF59A88A49",
+    "credentialUrl": "https://www.hackerrank.com/certificates/F9AF59A88A49",
+    "description": "It covers topics in Java language such as classes, data structures, inheritance, exception handling, etc.",
+    "badgeUrl": "https://images.g2crowd.com/uploads/product/image/dc8855248a4baee3ab92e3b9bf5273af/hackerrank-for-developers.png"
   }
 ]
