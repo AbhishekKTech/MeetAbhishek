@@ -513,6 +513,24 @@ export default function Portfolio() {
           </section>
         )}
 
+        {/* Certifications Section */}
+        {unsavedData.certifications.length > 0 && (
+          <section id="certifications" className="py-20">
+            <SectionHeading>Certifications</SectionHeading>
+            <CertificationEditor
+              certifications={unsavedData.certifications}
+              onChange={(newCertifications) => {
+                setUnsavedData({
+                  ...unsavedData,
+                  certifications: newCertifications,
+                })
+              }}
+              isEditing={isEditing}
+            />
+          </section>
+        )}
+
+        
         {/* Skills Section */}
         {unsavedData.skills.length > 0 && (
           <section id="skills" className="py-20 relative">
@@ -565,23 +583,7 @@ export default function Portfolio() {
           </section>
         )}
 
-        {/* Certifications Section */}
-        {unsavedData.certifications.length > 0 && (
-          <section id="certifications" className="py-20">
-            <SectionHeading>Certifications</SectionHeading>
-            <CertificationEditor
-              certifications={unsavedData.certifications}
-              onChange={(newCertifications) => {
-                setUnsavedData({
-                  ...unsavedData,
-                  certifications: newCertifications,
-                })
-              }}
-              isEditing={isEditing}
-            />
-          </section>
-        )}
-
+        
         {/* Contact Section */}
         <section id="contact" className="py-20">
           <SectionHeading>Contact Me</SectionHeading>
