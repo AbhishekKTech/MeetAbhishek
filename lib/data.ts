@@ -53,7 +53,7 @@ export const socialLinks = [
   },
   {
     "platform": "custom",
-    "url": "https://leetcode.com/u/abhieee-dev/",
+    "url": "https://leetcode.com/u/abhishekkshama/",
     "icon": "Globe"
   }
 ]
@@ -64,7 +64,7 @@ export const personalInfo = {
   "email": "sharma.abhieee@gmail.com",
   "location": "Noida, IN",
   "bio": "I am a curious and responsible individual who strives for excellence in every aspect. capable of adapting to any work environment. Currently pursuing an MCA from JSSATE Noida, I am dedicated to upskilling and refining my personality to meet top-tier industry standards. When not behind the keyboard, you will find me exploring new ideas and focusing on self-growth.",
-  "resumeUrl": "https://www.dropbox.com/scl/fi/0tyu3wzp0ml5ryl64t105/Abhishek-Resume-Java1-1.pdf?rlkey=sof3vfzc6czpvnv37d4k5daog&st=4apciivk&raw=1",
+  "resumeUrl": "https://www.dropbox.com/scl/fi/af1wha0by1wjl2k6numc9/Abhishek_java_Resume1.pdf?rlkey=awxhfdvrxrnmm7h4tyc7nijlh&st=kj3zkfk5&raw=1",
   "imageUrl": "https://www.dropbox.com/scl/fi/7g14r811ugid2rl0r3hip/photo.webp?rlkey=taioufzyzd60eekx5igf24nju&raw=1",
   "logoFormat": "initials",
   "openToWork": true,
@@ -82,7 +82,7 @@ export const projects = [
     ],
     "links": [
       {
-        "name": "View Book",
+        "name": "View on Amazon.in",
         "url": "https://www.amazon.in/dp/B0GTPJVXW2?ref=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&ref_=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&social_share=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&bestFormat=true",
         icon: Globe
       }
@@ -126,11 +126,13 @@ export const projects = [
     "inDevelopment": false
   },
   {
-    "title": "CyberZet Digital Solutions",
-    "description": "A digital solutions Site to meet your business goals. Providing services in website development, digital marketing, graphic design, and online courses to boost your digital presence.",
+    "title": "Cyberzet Digital Solutions (Digital Agency Setup)",
+    "description": "• Tech & Infrastructure: Hosted and deployed the platform independently\n• Payment Integration: Successfully integrated Razorpay payment gateway to handle secure online transactions and client onboarding.\n\n• Business Operations: Handled end-to-end setup including MSME registration, social media presence, and business logic execution.",
     "tags": [
       "React",
-      "JavaScript"
+      "JavaScript",
+      "SMM",
+      "SEO"
     ],
     "links": [
       {
@@ -142,42 +144,6 @@ export const projects = [
     "inDevelopment": false
   }
 ]
-
-
-export const certifications = [
-  {
-    "title": "Object Oriented Programming in Java",
-    "issuer": "University of California San Diego, Coursera",
-    "issueDate": "2023",
-    "expiryDate": "",
-    "credentialId": "TLFPJDSSAZTY",
-    "badgeUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Coursera_logo_%282020%29.svg",
-    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/TLFPJDSSAZTY",
-    "description": "Learned about Software Documentation\nSoftware Documentation User Interface (UI)\nUser Interface (UI)\nCategory: Java Programming\nJava Programming\nCategory: Programming Principles\nProgramming Principles\nCategory: Java\nJava\nCategory: Software Engineering\nSoftware Engineering\nCategory: Geospatial Mapping\nGeospatial Mapping\nCategory: Algorithms\nAlgorithms\nCategory: Computer Programming\nComputer Programming\nCategory: Object Oriented Design\nObject Oriented Design\nCategory: Interactiv"
-  },
-  {
-    "title": "Postman API Fundamentals Student Expert",
-    "issuer": "Postman",
-    "issueDate": "2023",
-    "expiryDate": "",
-    "credentialId": "64b7fa12b702cd40033fc94b",
-    "credentialUrl": "https://badges.parchment.com/public/assertions/XiAeeeOLToS7Z8PM3lYXLg?identity__email=abhishek859573@gmail.com",
-    "description": "A hand’s on certification that teaches Me:\n\nWhat APIs are and their importance in modern software development\nHow to use Postman to work with APIs\nMaking GET, POST, PATCH, and DELETE requests\nQuery parameters, bodies, headers, response codes\nBasic scripting\nAPI Key Authorization\nHow to use APIs in your applications",
-    "badgeUrl": "https://api.badgr.io/public/assertions/XiAeeeOLToS7Z8PM3lYXLg/image"
-  },
-  {
-    "title": "Java (Basic) Certificate",
-    "issuer": "HackerRank",
-    "issueDate": "2026",
-    "expiryDate": "",
-    "credentialId": "F9AF59A88A49",
-    "credentialUrl": "https://www.hackerrank.com/certificates/F9AF59A88A49",
-    "description": "It covers topics in Java language such as classes, data structures, inheritance, exception handling, etc.",
-    "badgeUrl": "https://images.g2crowd.com/uploads/product/image/dc8855248a4baee3ab92e3b9bf5273af/hackerrank-for-developers.png"
-  }
-]
-
-
 
 export const skills = [
   {
@@ -304,3 +270,35 @@ export const education = [
   }
 ]
 
+export const certifications = [
+  {
+    "title": "Object Oriented Programming in Java",
+    "issuer": "University of California San Diego, Coursera",
+    "issueDate": "2023",
+    "expiryDate": "",
+    "credentialId": "TLFPJDSSAZTY",
+    "badgeUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Coursera_logo_%282020%29.svg",
+    "credentialUrl": "https://www.coursera.org/account/accomplishments/verify/TLFPJDSSAZTY",
+    "description": "Learned about Software Documentation\nSoftware Documentation User Interface (UI)\nUser Interface (UI)\nCategory: Java Programming\nJava Programming\nCategory: Programming Principles\nProgramming Principles\nCategory: Java\nJava\nCategory: Software Engineering\nSoftware Engineering\nCategory: Geospatial Mapping\nGeospatial Mapping\nCategory: Algorithms\nAlgorithms\nCategory: Computer Programming\nComputer Programming\nCategory: Object Oriented Design\nObject Oriented Design\nCategory: Interactiv"
+  },
+  {
+    "title": "Postman API Fundamentals Student Expert",
+    "issuer": "Postman",
+    "issueDate": "2023",
+    "expiryDate": "",
+    "credentialId": "64b7fa12b702cd40033fc94b",
+    "credentialUrl": "https://badges.parchment.com/public/assertions/XiAeeeOLToS7Z8PM3lYXLg?identity__email=abhishek859573@gmail.com",
+    "description": "A hand’s on certification that teaches Me:\n\nWhat APIs are and their importance in modern software development\nHow to use Postman to work with APIs\nMaking GET, POST, PATCH, and DELETE requests\nQuery parameters, bodies, headers, response codes\nBasic scripting\nAPI Key Authorization\nHow to use APIs in your applications",
+    "badgeUrl": "https://api.badgr.io/public/assertions/XiAeeeOLToS7Z8PM3lYXLg/image"
+  },
+  {
+    "title": "Java (Basic) Certificate",
+    "issuer": "HackerRank",
+    "issueDate": "2026",
+    "expiryDate": "",
+    "credentialId": "F9AF59A88A49",
+    "credentialUrl": "https://www.hackerrank.com/certificates/F9AF59A88A49",
+    "description": "It covers topics in Java language such as classes, data structures, inheritance, exception handling, etc.",
+    "badgeUrl": "https://images.g2crowd.com/uploads/product/image/dc8855248a4baee3ab92e3b9bf5273af/hackerrank-for-developers.png"
+  }
+]
