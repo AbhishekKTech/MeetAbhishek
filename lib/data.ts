@@ -112,7 +112,8 @@ export const projects = [
       {
         "name": "Demo Video",
         "url": "https://youtu.be/dsrWwDutcLw",
-        "icon": Youtube 
+        "icon": Youtube
+      }
     ],
     "inDevelopment": false
   },
@@ -146,7 +147,7 @@ export const projects = [
     "links": [
       {
         "name": "Github Repo",
-        "url": "https://github.com/AbhishekKTech/ecommerce-engine", // Check karna bhai, link same e-commerce wala hai yahan
+        "url": "https://github.com/AbhishekKTech/ecommerce-engine",
         "icon": Github
       }
     ],
@@ -182,7 +183,7 @@ export const projects = [
       {
         "name": "View on Amazon.in",
         "url": "https://www.amazon.in/dp/B0GTPJVXW2?ref=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F",
-        "icon": Globe
+        "icon": BookOpen
       }
     ],
     "inDevelopment": true
