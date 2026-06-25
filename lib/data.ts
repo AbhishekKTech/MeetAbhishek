@@ -276,7 +276,7 @@ export const skills = [
 
 export const experience = [
   {
-    "title": "Backend Devloper Intern ",
+    "title": "Backend Developer Intern",
     "company": "S3D Technology Pvt Ltd",
     "location": "Remote",
     "startYear": "2026",
@@ -291,11 +291,11 @@ export const experience = [
     "title": "Website Developer Intern",
     "company": "Live Tech Services",
     "location": "Greater Noida, UP",
-    "startYear": "2026",
-    "endYear": "",
-    "isOngoing": true,
+    "startYear": "2024",
+    "endYear": "2024",
+    "isOngoing": false,
     "description": [
-      "Built responsive WordPress and Shopify websites, handling ongoing maintenance for continuous availability."
+      "Built responsive WordPress and Shopify websites, handling ongoing maintenance for continuous availability.", 
       "Executed hands-on SEO strategies to boost website visibility and drive organizational growth."
     ]
   }
