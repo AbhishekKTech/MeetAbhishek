@@ -87,10 +87,10 @@ export const projects = [
       {
         "name": "Live Website",
         "url": "https://www.internleaks.in",
-        "icon": Globe
+        icon: Globe
       }
     ],
-    "inDevelopment": false
+    "inDevelopment": true
   },
   {
     "title": "Skribbl.io Clone - Real-Time Multiplayer Game",
