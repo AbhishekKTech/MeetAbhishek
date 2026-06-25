@@ -64,7 +64,7 @@ export const personalInfo = {
   "email": "sharma.abhieee@gmail.com",
   "location": "Noida, IN",
   "bio": "I am a curious and responsible individual who strives for excellence in every aspect. capable of adapting to any work environment. Currently pursuing an MCA from JSSATE Noida, I am dedicated to upskilling and refining my personality to meet top-tier industry standards. When not behind the keyboard, you will find me exploring new ideas and focusing on self-growth.",
-  "resumeUrl": "https://www.dropbox.com/scl/fi/af1wha0by1wjl2k6numc9/Abhishek_java_Resume1.pdf?rlkey=awxhfdvrxrnmm7h4tyc7nijlh&st=kj3zkfk5&raw=1",
+  "resumeUrl": "https://www.dropbox.com/scl/fi/nftuc4n0zunv80kw9ffvb/Abhishek_java_Resume1-5.pdf?rlkey=b6t3hpphpqg91femrkufzocct&st=lx0pm8qf&raw=1",
   "imageUrl": "https://www.dropbox.com/scl/fi/7g14r811ugid2rl0r3hip/photo.webp?rlkey=taioufzyzd60eekx5igf24nju&raw=1",
   "logoFormat": "initials",
   "openToWork": true,
@@ -73,21 +73,49 @@ export const personalInfo = {
 
 export const projects = [
   {
-    "title": "The Invisible Boy Who Refused to Stay Average",
-    "description": "Wrote and structured a complete eBook\nPublished on Amazon Kindle (KDP)\nFocused on real-life student problems like procrastination, self-doubt, and discipline",
+    "title": "InternLeaks - AI Fraud Detection SaaS",
+    "description": "Engineered an open-source SaaS platform detecting fraudulent internships using Gemini AI and live web intelligence. Built with Next.js 14 and a Java Spring Boot backend. Features an interactive AI document scanner, a real-time community 'Scam Wall', and secure OAuth/JWT authentication ensuring 100% user anonymity. Backed by MySQL and containerized via Docker for scalability.",
     "tags": [
-      "Writing",
-      "Self Growth",
-      "KDP"
+      "Next.js",
+      "Spring Boot",
+      "Gemini AI",
+      "MySQL",
+      "Tailwind CSS",
+      "Full-Stack"
     ],
     "links": [
       {
-        "name": "View on Amazon.in",
-        "url": "https://www.amazon.in/dp/B0GTPJVXW2?ref=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&ref_=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&social_share=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F&bestFormat=true",
-        icon: Globe
+        "name": "Live Website",
+        "url": "https://www.internleaks.in",
+        "icon": Globe
       }
     ],
-    "inDevelopment": true
+    "inDevelopment": false
+  },
+  {
+    "title": "Skribbl.io Clone - Real-Time Multiplayer Game",
+    "description": "Developed a real-time multiplayer drawing and guessing game using Next.js, Node.js, and Socket.IO. Engineered a custom OOP-based game engine handling strict turn-based logic, dynamic scoring, and room management. Implemented native HTML5 Canvas synchronization with drawing tools, undo functionality, and a responsive glassmorphism UI.",
+    "tags": [
+      "Next.js",
+      "Node.js",
+      "Socket.IO",
+      "HTML5 Canvas",
+      "Tailwind CSS",
+      "OOP"
+    ],
+    "links": [
+      {
+        "name": "Live Website",
+        "url": "https://skribbl-frontend-mocha.vercel.app",
+        "icon": Globe
+      },
+      {
+        "name": "Demo Video",
+        "url": "https://youtu.be/dsrWwDutcLw",
+        "icon": Globe // Ya agar 'Youtube' ya 'Video' icon hai toh wo laga lena
+      }
+    ],
+    "inDevelopment": false
   },
   {
     "title": "High-Concurrency E-Commerce Checkout Engine",
@@ -102,7 +130,7 @@ export const projects = [
       {
         "name": "Github Repo",
         "url": "https://github.com/AbhishekKTech/ecommerce-engine",
-        icon: Github
+        "icon": Github
       }
     ],
     "inDevelopment": false
@@ -119,8 +147,8 @@ export const projects = [
     "links": [
       {
         "name": "Github Repo",
-        "url": "https://github.com/AbhishekKTech/ecommerce-engine",
-        icon: Github
+        "url": "https://github.com/AbhishekKTech/ecommerce-engine", // Check karna bhai, link same e-commerce wala hai yahan
+        "icon": Github
       }
     ],
     "inDevelopment": false
@@ -138,10 +166,27 @@ export const projects = [
       {
         "name": "CyberZet.in",
         "url": "https://thecyberzet.in/",
-        icon: Globe
+        "icon": Globe
       }
     ],
     "inDevelopment": false
+  },
+  {
+    "title": "The Invisible Boy Who Refused to Stay Average",
+    "description": "Wrote and structured a complete eBook\nPublished on Amazon Kindle (KDP)\nFocused on real-life student problems like procrastination, self-doubt, and discipline",
+    "tags": [
+      "Writing",
+      "Self Growth",
+      "KDP"
+    ],
+    "links": [
+      {
+        "name": "View on Amazon.in",
+        "url": "https://www.amazon.in/dp/B0GTPJVXW2?ref=cm_sw_r_ffobk_cso_wa_mwn_dp_GV8BF993VSS468Q9HG5F",
+        "icon": Globe
+      }
+    ],
+    "inDevelopment": true
   }
 ]
 
@@ -168,10 +213,6 @@ export const skills = [
       {
         "name": "C++",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-      },
-      {
-        "name": "Kotlin",
-        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
       }
     ]
   },
@@ -181,6 +222,10 @@ export const skills = [
       {
         "name": "Mysql",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+      },
+      {
+        "name": "Prisma ORM",
+        "icon": "https://camo.githubusercontent.com/ed081e52f905f47ba9989050ce231ad1d49bcec2a97c7729fa101a25fb8947dc/68747470733a2f2f63646e2e667265656c6f676f766563746f72732e6e65742f77702d636f6e74656e742f75706c6f6164732f323032322f30312f707269736d615f6c6f676f2d667265656c6f676f766563746f72732e6e65745f2e706e67"
       }
     ]
   },
@@ -220,6 +265,10 @@ export const skills = [
       {
         "name": "Express",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+      },
+      {
+        "name": "Nodejs",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
       }
     ]
   }
@@ -227,15 +276,26 @@ export const skills = [
 
 export const experience = [
   {
-    "title": "Website Developer Intern",
-    "company": "Live Tech Service",
-    "location": "Greater Noida, India",
-    "startYear": "2023",
-    "endYear": "2024",
-    "isOngoing": false,
+    "title": "Backend Devloper Intern ",
+    "company": "S3D Technology Pvt Ltd",
+    "location": "Remote",
+    "startYear": "2026",
+    "endYear": "",
+    "isOngoing": true,
     "description": [
-      "Built responsive WordPress & Shopify websites and handled ongoing maintenance for continuous availability.",
-      "Executed hands-on SEO strategies to boost website visibility and drive key organizational growth."
+      "Developing and optimizing high-performance RESTful APIs for live client projects",
+      "Managing continuous bug resolution and establishing secure, scalable database connections Using mySql"
+    ]
+  },
+  {
+    "title": "Backend Devloper Intern ",
+    "company": "S3D Technology Pvt Ltd",
+    "location": "Remote",
+    "startYear": "2026",
+    "endYear": "",
+    "isOngoing": true,
+    "description": [
+      "Developing and optimizing high-performance RESTful APIs for live client projects"
     ]
   }
 ]
