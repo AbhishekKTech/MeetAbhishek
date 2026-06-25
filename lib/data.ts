@@ -288,14 +288,15 @@ export const experience = [
     ]
   },
   {
-    "title": "Backend Devloper Intern ",
-    "company": "S3D Technology Pvt Ltd",
-    "location": "Remote",
+    "title": "Website Developer Intern",
+    "company": "Live Tech Services",
+    "location": "Greater Noida, UP",
     "startYear": "2026",
     "endYear": "",
     "isOngoing": true,
     "description": [
-      "Developing and optimizing high-performance RESTful APIs for live client projects"
+      "Built responsive WordPress and Shopify websites, handling ongoing maintenance for continuous availability."
+      "Executed hands-on SEO strategies to boost website visibility and drive organizational growth."
     ]
   }
 ]
