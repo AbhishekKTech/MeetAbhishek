@@ -1,4 +1,4 @@
-import { Github, Globe, Linkedin, Mail, Twitter } from 'lucide-react'
+import { Github, Globe, Linkedin, Mail, Twitter, Youtube, BookOpen, Code2 } from 'lucide-react'
 
 export const navigationLinks = [
   {
@@ -39,22 +39,22 @@ export const socialLinks = [
   {
     "platform": "github",
     "url": "https://github.com/abhishekktech",
-    icon: Github
+    "icon": Github
   },
   {
     "platform": "linkedin",
     "url": "https://linkedin.com/in/abhishekktech",
-    icon: Linkedin
+    "icon": Linkedin
   },
   {
     "platform": "email",
     "url": "mailto:sharma.abhieee@gmail.com",
-    icon: Mail
+    "icon": Mail
   },
   {
     "platform": "custom",
     "url": "https://leetcode.com/u/abhishekkshama/",
-    "icon": "Globe"
+    "icon": Code2 // "Globe" text ko hata kar component lagaya
   }
 ]
 
@@ -112,8 +112,7 @@ export const projects = [
       {
         "name": "Demo Video",
         "url": "https://youtu.be/dsrWwDutcLw",
-        "icon": Globe // Ya agar 'Youtube' ya 'Video' icon hai toh wo laga lena
-      }
+        "icon": Youtube 
     ],
     "inDevelopment": false
   },
